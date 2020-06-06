@@ -12,7 +12,8 @@
     "react-router-dom": "^5.1.2",
     "antd": "^4.1.2",
     "@ant-design/icons": "^4.1.0",
-    "bootstrap": "^4.2.1"
+    "bootstrap": "^4.2.1",
+    "reactstrap": "^6.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
