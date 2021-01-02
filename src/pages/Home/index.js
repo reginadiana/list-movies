@@ -3,6 +3,7 @@ import Header from "../../components/Header/index";
 import ApiMovies from "../../components/ApiMovies/index";
 import Footer from "../../components/Footer/index";
 import { Context } from "../../context";
+import "./style.css";
 
 const Home = () => {
   const [search, getSearch] = useState("");

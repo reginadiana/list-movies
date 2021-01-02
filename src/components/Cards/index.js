@@ -4,11 +4,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Context } from "../../context";
 import BestMovies from "../BestMovies/index";
 import * as Style from "./style";
-import { Button, Modal, ModalHeader, ModalBody } from "reactstrap";
+import { Modal, ModalHeader, ModalBody, Button } from "reactstrap";
 
 const Cards = ({ movies }) => {
   const { search } = useContext(Context);
-
+  const [seeMore, setSeeMore] = useState(4);
   const [modal, setModal] = useState(false);
   const [movie, setMovie] = useState("");
   const toggle = (movie) => {
@@ -17,10 +17,14 @@ const Cards = ({ movies }) => {
   };
 
   const renderMovies = () => {
+    var moviesDisplayed = 0;
+
     return movies.map((movie) => {
       var foundSearch = movie.title.toUpperCase().includes(search);
 
-      if (foundSearch)
+      if (foundSearch && moviesDisplayed < seeMore) {
+        moviesDisplayed = moviesDisplayed + 1;
+
         return (
           <Style.Movie
             src={posterIt}
@@ -28,6 +32,7 @@ const Cards = ({ movies }) => {
             alt="Poster do filme"
           />
         );
+      }
 
       return null;
     });
@@ -37,7 +42,12 @@ const Cards = ({ movies }) => {
     <>
       <BestMovies movies={movies} />
 
-      <Style.Movies>{renderMovies()}</Style.Movies>
+      <Style.Container>
+        <Style.Movies>{renderMovies()}</Style.Movies>
+        <Button color="danger" onClick={() => setSeeMore(seeMore + 4)}>
+          +
+        </Button>
+      </Style.Container>
 
       <Modal isOpen={modal} toggle={toggle}>
         <ModalHeader toggle={toggle}>{movie.title}</ModalHeader>

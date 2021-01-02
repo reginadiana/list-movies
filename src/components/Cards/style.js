@@ -1,9 +1,18 @@
 import styled from "styled-components";
 
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  button {
+    margin-top: 50px;
+    align-self: center;
+  }
+`;
+
 export const Movies = styled.div`
   display: grid;
   justify-content: center;
-  background-color: black;
   grid-template-columns: repeat(1, 300px);
   gap: 50px;
 

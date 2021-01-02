@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Context = styled.div`
   display: flex;
   justify-content: space-around;
-  background-color: black;
   width: 100%;
   padding: 10px;
 
@@ -14,6 +13,7 @@ export const Context = styled.div`
   @media screen and (max-width: 592px) {
     align-items: center;
     flex-direction: column;
+    justify-content: center;
 
     img {
       margin: 20px 0;
