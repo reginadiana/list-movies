@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { FireOutlined } from "@ant-design/icons";
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
+import { Button, Modal, ModalHeader, ModalBody } from "reactstrap";
+import * as Style from "./style";
 
 function BestMovies({ movies, className }) {
   const [modal, setModal] = useState(false);
@@ -13,7 +13,7 @@ function BestMovies({ movies, className }) {
       if (movie.rt_score > minScore) {
         return (
           <p>
-            {movie.title} <FireOutlined /> {movie.rt_score}
+            {movie.rt_score} - {movie.title}
           </p>
         );
       }
@@ -22,25 +22,18 @@ function BestMovies({ movies, className }) {
     });
 
   return (
-    <>
-      <div>
-        <Button color="danger" onClick={toggle}>
-          See the best movies
-        </Button>
+    <Style.Container>
+      <Button color="danger" onClick={toggle}>
+        Ver melhores filmes
+      </Button>
 
-        <Modal isOpen={modal} toggle={toggle} className={className}>
-          <ModalHeader toggle={toggle}>Melhores filmes</ModalHeader>
-          <ModalBody>
-            <div>{renderBestMovies()}</div>
-          </ModalBody>
-          <ModalFooter>
-            <Button color="secondary" onClick={toggle}>
-              Close
-            </Button>
-          </ModalFooter>
-        </Modal>
-      </div>
-    </>
+      <Modal isOpen={modal} toggle={toggle} className={className}>
+        <ModalHeader toggle={toggle}>Lista dos melhores filmes</ModalHeader>
+        <ModalBody>
+          <div>{renderBestMovies()}</div>
+        </ModalBody>
+      </Modal>
+    </Style.Container>
   );
 }
 

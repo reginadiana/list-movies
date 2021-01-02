@@ -16,7 +16,7 @@ export const Context = styled.div`
     flex-direction: column;
 
     img {
-      margin-bottom: 20px;
+      margin: 20px 0;
     }
   }
 `;
