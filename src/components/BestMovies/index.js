@@ -9,11 +9,11 @@ function BestMovies({ movies, className }) {
   const minScore = 94;
 
   const renderBestMovies = () =>
-    movies.map((itemJson) => {
-      if (itemJson.rt_score > minScore) {
+    movies.map((movie) => {
+      if (movie.rt_score > minScore) {
         return (
           <p>
-            {itemJson.title} <FireOutlined /> {itemJson.rt_score}
+            {movie.title} <FireOutlined /> {movie.rt_score}
           </p>
         );
       }
