@@ -3,6 +3,7 @@ import posterIt from "../../assets/poster.jpg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Context } from "../../context";
 import BestMovies from "../BestMovies/index";
+import * as Style from "./style";
 
 const Cards = ({ movies }) => {
   const { search } = useContext(Context);
@@ -28,7 +29,7 @@ const Cards = ({ movies }) => {
     <>
       <BestMovies movies={movies} />
 
-      <div>{renderMovies()}</div>
+      <Style.Movies>{renderMovies()}</Style.Movies>
     </>
   );
 };
