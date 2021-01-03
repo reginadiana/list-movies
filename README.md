@@ -1,20 +1,18 @@
 ![Screenshot_2021-01-02 Apresentação sem título - Apresentações Google](https://user-images.githubusercontent.com/46378210/103469484-3d825a80-4d44-11eb-8071-c131b397a551.png)
 
-## :octocat: What is App
+## :octocat: Aplicação
 
-The goal is developer an application frontend that request an API about movies and to render informations about him in UI. 
+O projeto é uma aplicação frontend que realiza uma requisição da API de filmes do Studio Ghibli e os apresenta para o usuário.
 
-## Functionalities
+## Funcionalidades
 
-:heavy_check_mark:API consumption
+:heavy_check_mark: Consumo de API com fetch
 
-:heavy_check_mark:Filter of movies
+:heavy_check_mark: Busca de filmes pelo titulo
 
-:heavy_check_mark:Show the movies with better score
+:heavy_check_mark: Mostra uma lista de filmes com score maiores que 95 
 
-:heavy_check_mark: Use of AntDesign
-
-:heavy_check_mark:Responsive layout 
+:heavy_check_mark: Layout responsivo
 
 ### :iphone: Layout 
 
@@ -22,15 +20,15 @@ The goal is developer an application frontend that request an API about movies a
 
 ## Resources
 
-- React
-- React Routes
-- AntDesing 
+:books: React
+
+:books: React Boostrap
+
+:books: AntDesing 
 
 ## :floppy_disk: JSON/Mock
 
-I get the informations of this API: https://ghibliapi.herokuapp.com/films
-
-Specifically, I used this data:
+Exemplo de resposta da API: https://ghibliapi.herokuapp.com/films
 
 ```json
 "title": "Castle in the Sky",
@@ -41,37 +39,26 @@ Specifically, I used this data:
 "rt_score": "95",
 ```
 
-## Architeture
+## Arquitetura
 
-### Pages
+### Paginas
 
-- Home: Here we have the header, seach, list and ranking of movies and footer.
+- Home: Apresenta o cabeçalho, campo de busca, lista de filmes, melhores scores e rodapé.
 
-## How to run application
+## Como rodar a aplicação
 
-Clone this project:
-
-```
-git clone "https://github.com/Diana-ops/womakerscodeReact/tree/master/list-movies"
-```
-
-Install resources with:
+Clone este projeto e entre na pasta:
 
 ```
-$ yarn add react-redux
-$ npm install --save react-router
-$ yarn add antd
+git clone https://github.com/Diana-ops/womakerscodeReact/tree/master/list-movies && list-movies
 ```
-
-Install dependeces and run with:
+Instale as dependencias e execute:
 
 ```
-$ yarn install
-$ cd src
-$ yarn start
+$ yarn install && start
 ```
 
-Is possible to see the response of local request acessing http://localhost:3000
+É possivel acessar o projeto rodando na rota: http://localhost:3000
 
 If you can and wanted give me some **feedback** about my project or README.md, send me a **Pull Requests**. Advices are many welcome and constructive for me :smile:
 
