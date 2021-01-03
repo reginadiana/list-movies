@@ -30,18 +30,13 @@ I get the informations of this API: https://ghibliapi.herokuapp.com/films
 
 Specifically, I used this data:
 
-```
-    "title": "Castle in the Sky",
-    
-    "description": "The orphan Sheeta inherited a mysterious crystal [...],
-    
-    "director": "Hayao Miyazaki",
-    
-    "producer": "Isao Takahata",
-    
-    "release_date": "1986",
-    
-    "rt_score": "95",
+```json
+"title": "Castle in the Sky",
+"description": "The orphan Sheeta inherited a mysterious crystal [...],
+"director": "Hayao Miyazaki",
+"producer": "Isao Takahata",
+"release_date": "1986",
+"rt_score": "95",
 ```
 
 ## Architeture
