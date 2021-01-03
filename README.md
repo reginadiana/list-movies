@@ -16,7 +16,7 @@ The goal is developer an application frontend that request an API about movies a
 
 ### :iphone: Layout 
 
-![layout](https://user-images.githubusercontent.com/46378210/77286322-c0ed2680-6cb1-11ea-821f-517f7fe27ae8.png)
+![Screenshot_2021-01-02 Netflix](https://user-images.githubusercontent.com/46378210/103469380-b1bbfe80-4d42-11eb-8dfc-acf7f5347519.png)
 
 ## Resources
 
