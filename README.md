@@ -54,7 +54,7 @@ Exemplo de resposta da API: https://ghibliapi.herokuapp.com/films
 Clone este projeto e entre na pasta:
 
 ```
-git clone https://github.com/reginadiana/master/list-movies && list-movies
+git clone https://github.com/reginadiana/list-movies && list-movies
 ```
 Instale as dependencias e execute:
 
